@@ -15,13 +15,12 @@ const menu = require("./lib/menu.js")
 
 const apivhtear = 'Apikey vhtear';
 const apibarbar = 'Apikey mhankbarbar';
-const BotName = 'VVIPINDO BOT'; 
-const instagram = 'agus_alnsyh71- kaelMk_'; 
-const aktif = 'Kapan bot aktif';
+const BotName = 'pajri BOT'; 
+const instagram = 'KENON_CEHA_ID'; 
+const aktif = '07:00/21:0';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Agus\n' // Nama kamu
-            + 'ORG:VVIPINDO;\n' // Nama bot
+            + 'ORG:VVIPINDO;\n' // PajriBot
             + 'TEL;type=CELL;type=VOICE;waid=6289613469459:+62 896-1346-9459\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
@@ -90,7 +89,7 @@ conn.on('message-new', async(m) =>
    let imageMessage = m.message.imageMessage;
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
 
-//fitur
+!fitur
 if (text.includes('.Seberapabucin')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -101,7 +100,7 @@ axios.get(`https://arugaz.herokuapp.com/api/howbucins`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
-//kerang ajaib
+!kerang ajaib
 if (text.includes('.Apakah')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .apakah aku cantik_',MessageType.text, {quoted: m});
 }
@@ -179,7 +178,7 @@ const truth =[
 const ttrth = truth[Math.floor(Math.random() * truth.length)]
 conn.sendMessage(id, 'Pertanyaan : *'+teks+'*\n\nJawaban : '+ ttrth, MessageType.text, { quoted: m })
 }
-  //Zodiak
+  !Zodiak
 if (text.includes('.Zodiak')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -191,7 +190,7 @@ axios.get(`https://api.vhtear.com/zodiak?query=${teks}&apikey=${apivhtear}`).the
 })
 }
 
-  //Tebakgambar
+  !Tebakgambar
 if (text.includes('.Tebakgambar')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -207,7 +206,7 @@ axios.get(`https://api.vhtear.com/tebakgambar&apikey=${apivhtear}`).then((res) =
 })
 }
 
-  //Familly100
+  !Familly100
 if (text.includes('.Family100')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -218,7 +217,7 @@ axios.get(`https://api.vhtear.com/family100&apikey=${apivhtear}`).then((res) => 
 })
 }
 
-  //Artimimpi
+  !Artimimpi
 if (text.includes('.Mimpi')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -230,7 +229,7 @@ axios.get(`https://api.vhtear.com/artimimpi?query=${teks}&apikey=${apivhtear}`).
 })
 }
 
- //Brainly 
+ !Brainly 
 if (text.includes('.Brainly')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -241,7 +240,7 @@ axios.get(`https://api.vhtear.com/branly?query=${teks}&apikey=${apivhtear}`).the
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
-  //How gay
+  !njer
 if (text.includes('.Seberapagay')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -253,7 +252,7 @@ axios.get(`https://arugaz.herokuapp.com/api/howgay`).then((res) => {
 })
 }
 
- //Info owner
+ !Info owner
 if (text.includes('.Owner')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -261,7 +260,7 @@ if (text.includes('.owner')){
 conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: m } )
 }
 
-  //Ganti nama grup
+  !Ganti nama grup
 if (text.includes('.Setname')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -274,7 +273,7 @@ conn.sendMessage(id, 'Sukses mengganti Nama Group' ,MessageType.text, { quoted: 
 
 }
 
-  //Ganti deskripsi grup
+  !Ganti deskripsi grup
 if (text.includes('.Setdesc')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -287,7 +286,7 @@ conn.sendMessage(id, 'Sukses mengganti deskripsi grup' ,MessageType.text, { quot
 
 }
 
-//buka gc
+!buka gc
 if (text.includes('.Opengc')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -297,7 +296,7 @@ let hasil = `${id.split("@s.whatsapp.net")[0]}`;
 conn.sendMessage(id, 'Hai' ,MessageType.text);
 }
 
-//tutup gc
+!tutup gc
 if (text.includes('.Closegc')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 
@@ -309,7 +308,7 @@ conn.sendMessage(id, 'Done, Tutup dulu yah' ,MessageType.text);
 }
 
 
-  //Map
+  !Map
 if (text.includes('.Map')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -327,7 +326,7 @@ if (text.includes('.map')){
     })
 }
 
-  //Tag
+  !Tag
 if (text.includes('.Tagme')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -340,7 +339,7 @@ if (text.includes('.tagme')) {
  conn.sendMessage(id, options, MessageType.text)
 }
 
-  //Get ping
+  !Get ping
 if (text.includes('.Ping')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -350,7 +349,7 @@ const latensi = speed() - timestamp
 conn.sendMessage(id, `PONG!!\n_Speed : ${latensi.toFixed(4)} Second_`, MessageType.text, {quoted: m})
 }
 
-  //Nulis dibuku
+  !Nulis dibuku
 if (text.includes('.Nulis')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -367,7 +366,7 @@ if (text.includes('.nulis')){
         })
     })
 }
-  //Pengucapan ulang
+  !Pengucapan ulang
 if (text.includes('.Say')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -375,7 +374,7 @@ if (text.includes(".say")){
   const teks = text.replace(/.say /, "")
 conn.sendMessage(id, teks, MessageType.text)
 }
-  //Youtube download 
+  !Youtube download 
 if (text.includes('.Ytmp4')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -400,7 +399,7 @@ axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
 })
 }
 
-  //Instagram download
+  !Instagram download
 if (text.includes('.Ig')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -413,7 +412,7 @@ axios.get(`https://mhankbarbars.herokuapp.com/api/ig?url=${teks}&apiKey=${apibar
 })
 }
 
-  //Facebook download
+  !Facebook download
 if (text.includes('.Fb')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -426,7 +425,7 @@ axios.get(`https://api.vhtear.com/fbdl?link=${teks}&apikey=${apivhtear}`).then((
 })
 }
 
-  //Twitter download
+  !Twitter download
 if (text.includes('.Twt')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -439,7 +438,7 @@ axios.get(`https://mhankbarbars.herokuapp.com/api/twit?url=${teks}&apiKey=${apib
 })
 }
 
-  //Pencarian wiki
+  !Pencarian wiki
 if (text.includes('.Wiki')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -452,7 +451,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/wiki?q=${teks}`).then((res) => 
 })
 }
 
-  //Jadwan sholat daerah
+  !Jadwan sholat daerah
 if (text.includes('.Sholat')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -536,7 +535,7 @@ if (text.includes(".sholat")){
       }
    };
 
-  //Info convid
+  !Info convid
 if (text.includes('.Covid')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -553,7 +552,7 @@ const get = require('got')
     conn.sendMessage(id,`📌DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n*Positif* = ${positif} \n*Sembuh* = ${sembuh} \n*Meninggal* = ${meninggal}\n*Dirawat* = ${dirawat}\n\n*Stay safe dan selalu gunakan masker saat berpergian*`, MessageType.text, { quoted: m } );
 }
 
-  //Random foto cewe
+ ep
 if (text.includes('.Cecan')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -585,7 +584,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
     });
     }
 
-  //Random foto cowo
+  ep
 if (text.includes('.Cogan')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -616,7 +615,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
     });
     }
 
-  //Random anime
+  !Random anime
 if (text.includes('.Anime')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -647,7 +646,7 @@ if (text.includes(".anime"))
     });
     }
 
-  //Pencarian lirik
+  !Pencarian lirik
 if (text.includes('.Lirik')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -659,7 +658,7 @@ if (text.includes(".lirik")){
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
 	})
 }
-  //Font bapack
+  !Font bapack
 if (text.includes('.Alay')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -671,7 +670,7 @@ if (text.includes(".alay")){
 	})
 }
 
-  //Random memme
+  !Random memme
 if (text.includes('.Meme')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -701,7 +700,7 @@ if (text.includes(".meme"))
     });
     }
 
-  //Random wallpaper
+  !Random wallpaper
 if (text.includes('.Wp')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -731,7 +730,7 @@ if (text.includes(".wp"))
     });
     }
 
-  //Random twit
+  !Random twit
 if (text.includes('.Twit')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -762,7 +761,7 @@ if (text.includes(".twit"))
     });
     }
 
-  //Random quotes
+  !Random quotes
 if (text.includes(".loli"))
    {
     var items = ["anime loli"];
@@ -789,7 +788,7 @@ if (text.includes(".loli"))
     });
     }
 
-  //Neko
+  !Neko
 if (text.includes(".neko"))
    {
     var items = ["anime neko"];
@@ -816,7 +815,7 @@ if (text.includes(".neko"))
     });
     }
 
-  //quotes
+  !quotes
 if (text.includes('.Quotes')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -846,7 +845,7 @@ if (text.includes(".quotes"))
     });
     }
 
-  //Pencarian image
+  !Pencarian image
 if (text.includes('.Img')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -877,7 +876,7 @@ if (text.includes(".img"))
             });
     }
 
-  //Stalker instagram
+  !Stalker instagram
 if (text.includes('.Stalk')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -908,7 +907,7 @@ axios.get(`https://arugaz.herokuapp.com/api/chord?q=${teks}`).then((res) => {
 })
 }
 
-  //Informasi anime
+  !Informasi anime
 if (text.includes('.Infonime')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -921,7 +920,7 @@ axios.get(`https://arugaz.herokuapp.com/api/kuso?q=${sons}`).then ((res) =>{
     })
 }
 
-  //Random fakta
+  !pajri
 if (text.includes('.Fakta')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -943,7 +942,7 @@ if (messageType === MessageType.text)
 
    };
 
-  //Jadwal tv random
+  !Jadwal tv random
 if (text.includes('.Infotv')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -954,7 +953,7 @@ if (text.includes(".infotv")){
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
 }
-  //Nama ninja
+  !Nama ninja
 if (text.includes('.Namae')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -966,7 +965,7 @@ axios.get(`https://api.terhambar.com/ninja?nama=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
-  //Random informasi gempa
+  !Random informasi gempa
 if (text.includes('.Infogempa')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -978,7 +977,7 @@ if (text.includes(".infogempa")){
 })
 }
 
-  //Informasi cuaca daerah
+  !Informasi cuaca daerah
 if (text.includes('.Cuaca')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -991,7 +990,7 @@ if (text.includes(".cuaca")){
     })
 }
 
-  //Random puisi
+  !Random puisi
 if (text.includes('.Puisi')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1019,7 +1018,7 @@ if (text.includes(".puisi3")){
     })
 }
 
-  //Random cerpen
+  !Random cerpen
 if (text.includes('.Cerpen')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1031,7 +1030,7 @@ if (text.includes(".cerpen")){
     })
 }
 
-  //Pemendek link
+  !Pemendek link
 if (text.includes('.Shortlink')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1043,7 +1042,7 @@ axios.get(`https://tobz-api.herokuapp.com/api/shorturl?url=${teks}`).then((res) 
 })
 }
 
-  //Text to pict
+  !Text to pict
 if (text.includes('.logopornhub')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1079,7 +1078,7 @@ const teks = text.replace(/.logoesport /, "")
     })
 }
 
-  //Quotes maker
+  !Quotes maker
 if (text.includes('.Kata')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1099,7 +1098,7 @@ if (text.includes('.kata')){
     })
 }
 
-  //jadwal tv nasional
+  !jadwal tv nasional
 if (text.includes('.Jadwaltv')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1112,7 +1111,7 @@ axios.get(`https://mhankbarbars.herokuapp.com/api/jdtv?ch=${teks}&apiKey=${apiba
 })
 }
 
-  //Informasi BMKG
+  !Informasi BMKG
 if (text.includes('.Infobmkg')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1124,7 +1123,7 @@ if (text.includes(".infobmkg")){
     })
 }
 
-//Kamus besar bahasa indonesia
+!Kamus besar bahasa indonesia
 if (text.includes('.Kbbi')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1136,7 +1135,7 @@ axios.get(`https://mhankbarbars.herokuapp.com/api/kbbi?query=${teks}&apiKey=${ap
 })
 }
 
-//Hari nasional
+!Hari nasional
 if (text.includes('.Tglnas')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1148,7 +1147,7 @@ axios.get(`https://api.haipbis.xyz/harinasional?tanggal=${teks}`).then((res) => 
 })
 }
 
-//Get zodiak
+!Get zodiak
 if (text.includes('.Getzodiak')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1164,7 +1163,7 @@ if (text.includes('.getzodiak')){
     })
 }
 
-//Random Al-Qur'an
+!Random Al-Qur'an
 if (text.includes('.Ngaji')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
@@ -1178,12 +1177,12 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
 })
 }
 
-//Random loli
+!Random loli
 if (text.includes('.Loli')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
 
-//Random neko
+!Random neko
 if (text.includes('.Neko')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
